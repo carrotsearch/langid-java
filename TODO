@@ -1,0 +1,14 @@
+
+- the identifier should perform some kind of sanity normalization 
+  (URLs, e-mail addresses, numbers?, most punctuation perhaps)? 
+
+- should we identify ranges of unicode blocks (so that an English 
+  text with a Japanese quotation doesn't mix up two profiles)?
+
+- should we try to identify high-probability languages first?
+
+- a hierarchical classifier (language groups, then a second round for languages which are very similar)?
+
+- an automaton for top-K words for each language for *very* short texts?
+
+ 

@@ -1,0 +1,6 @@
+
+https://code.google.com/p/language-detection/downloads/detail?name=europarl-test.zip
+
+This is a test data set for 21 languages based on Europarl Parallel Corpus ( http://www.statmt.org/europarl/ ).
+It randomly samples 1000 sentences(lines) for each language.
+Each line forms "[language code]\t[plain text by UTF-8]" to be avaiable for batch test tool of this langdetect library.

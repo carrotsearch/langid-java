@@ -1,0 +1,3 @@
+
+Maven 3+ and Java 1.6+ are required. Then:
+  mvn clean install

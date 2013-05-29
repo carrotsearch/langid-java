@@ -1,0 +1,27 @@
+langid-java
+-----------
+
+A somewhat changed Java port of langid.py (https://github.com/saffsd/langid.py)
+
+Usage
+-----
+
+Fetch a JAR from Maven repositories (or compile it yourself). Then check out
+the javadocs of ILangIdClassifier and LangIdV3.
+
+Memory and Speed
+----------------
+
+Don't get fooled by the size of the JAR archive. The data model is LZMA 
+compressed and will take about ~10MB of RAM. Speed wise this implementation
+should be faster than anything else out there; if you have very large texts
+you can sub-sample, append those fragments and classify without processing
+the entire content.
+
+Quality
+-------
+
+At the moment the detection/ performance quality is identical to langid.py
+(the model and the math code is identical, even if written in a slightly
+different way to speed up computations in Java).
+
