@@ -165,7 +165,7 @@ public class LangIdV1 {
   public static synchronized Model defaultModel() {
     if (defaultModel == null) {
       try {
-        defaultModel = loadModel(LangIdV1.class.getResourceAsStream("langid.model"));
+        defaultModel = loadModel(LangIdV1.class.getResourceAsStream("/langid.model.txt"));
       } catch (IOException e) {
         throw new RuntimeException("Default model not available.", e);
       }
