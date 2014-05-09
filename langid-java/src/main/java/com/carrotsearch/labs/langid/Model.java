@@ -175,10 +175,12 @@ public final class Model {
 
       os.flush();
 
-      return Model.readExternal(
+      defaultModel = Model.readExternal(
           new ObjectInputStream(
               new ByteArrayInputStream(
                   os.toByteArray())));
+      return defaultModel;
+
     } catch (Exception e) {
       throw new RuntimeException("Default model not available.", e);
     } finally {
